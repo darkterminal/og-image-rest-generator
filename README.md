@@ -11,8 +11,8 @@
 #### Generate Simple Image (with gradient background)
 
 ```http
-  POST /generate
-  Content-Type: application/json
+POST /generate
+Content-Type: application/json
 ```
 
 | Parameter | Type     | Description                |
@@ -42,8 +42,8 @@ curl -X POST \
 
 ```json
 {
-    message: "Image generated!",
-    image: "data:image/png;base64,y12msd..."
+    "message": "Image generated!",
+    "image": "data:image/png;base64,y12msd..."
 }
 ```
 
@@ -53,7 +53,7 @@ curl -X POST \
 #### Classic SEO Banner
 
 ```http
-  GET /classic-seo-banner
+GET /classic-seo-banner
 ```
 
 | Query     | Type     | Description                       |
@@ -70,7 +70,7 @@ Result: `image/png`
 #### SEO Banner (New)
 
 ```http
-  GET /seo-banner
+GET /seo-banner
 ```
 
 | Query     | Type     | Description                       |

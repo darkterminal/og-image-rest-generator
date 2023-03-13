@@ -4,7 +4,7 @@
   "description": "free and powerful tool that simplifies the process of generating Open Graph images for your website or application",
   "main": "index.js",
   "scripts": {
-    "build": "sudo yum install gcc-c++ cairo-devel pango-devel libjpeg-turbo-devel giflib-devel && sudo apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev -y",
+    "build": "apt-get install build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev",
     "dev": "nodemon index.js",
     "start": "node index.js"
   },

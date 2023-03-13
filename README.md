@@ -1,11 +1,20 @@
 
 ![Sample Image Generator](https://og-image-rest-generator.fly.dev/seo-banner?title=OG:IMAGE%20REST%20Generator%20-%20Free%20And%20Open%20Source!&author=darkterminal&head=Baby%20Tyrex%20Release&writer=Punk%20Storyteller)
-# OG:IMAGE REST Generator
 
-**OG:IMAGE REST Generator** is a free and powerful tool that simplifies the process of generating Open Graph images for your website or application. With our RESTful API, you can quickly and easily create customized images that will make your content stand out on social media platforms like Facebook, Twitter, and LinkedIn.
+<h1 align="center">OG:IMAGE REST Generator</h1>
 
+<p align="center">
+  <strong>OG:IMAGE REST Generator</strong> is a free and powerful tool that simplifies the process of generating Open Graph images for your website or application. With our RESTful API, you can quickly and easily create customized images that will make your content stand out on social media platforms like Facebook, Twitter, and LinkedIn.
+</p>
 
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+<p align="center">
+  <a href="https://og-image-rest-generator.fly.dev/seo-banner?title=OG:IMAGE%20REST%20Generator%20-%20Free%20And%20Open%20Source!&author=darkterminal&head=Baby%20Tyrex%20Release&writer=Punk%20Storyteller" target="_blank"><strong>Try This!</strong></a>
+</p>
+
+## Endpoint URL
+```bash
+https://og-image-rest-generator.fly.dev
+```
 
 ## API Reference
 

@@ -1,9 +1,27 @@
 # Design Guideline
 
 Design `og:image` guidelines to our generator:
--  **Facebook**: 1200 x 630 pixels (_minimum 600 x 315 pixels_)
--  **Twitter**: 1200 x 675 pixels (_minimum 600 x 335 pixels_)
--  **LinkedIn**: 1200 x 628 pixels (_minimum 600 x 400 pixels_)
+Recommended sizes for Open Graph (og:image) images on popular social media platforms:
+- Facebook:
+  - Recommended size: 1200 x 630 pixels
+  - Minimum size: 600 x 315 pixels
+  - Aspect ratio: 1.91:1
+- Twitter:
+  - Recommended size: 1200 x 675 pixels
+  - Minimum size: 600 x 335 pixels
+  - Aspect ratio: 16:9
+- LinkedIn:
+  - Recommended size: 1200 x 628 pixels
+  - Minimum size: 600 x 400 pixels
+  - Aspect ratio: 1.91:1
+- Instagram:
+  - Recommended size: 1080 x 1080 pixels
+  - Minimum size: 600 x 600 pixels
+  - Aspect ratio: 1:1
+- Pinterest:
+  - Recommended size: 1000 x 1500 pixels
+  - Minimum size: 600 x 900 pixels
+  - Aspect ratio: 2:3
 
 ## Title Characters Length
 Maximum title characters length is **42 characters** if the title exceeds this length, it may be truncated.

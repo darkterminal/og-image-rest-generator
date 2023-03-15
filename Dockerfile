@@ -29,7 +29,7 @@ LABEL fly_launch_runtime="nodejs"
 COPY --from=builder /root/.volta /root/.volta
 COPY --from=builder /app /app
 
-RUN apt-get update; apt install -y fontconfig curl python-is-python3 pkg-config build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
+RUN apt-get update; apt install -y fontconfig curl build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev
 
 WORKDIR /app
 ENV NODE_ENV production

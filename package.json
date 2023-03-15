@@ -1,6 +1,6 @@
 {
   "name": "og-image-rest-generator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "free and powerful tool that simplifies the process of generating Open Graph images for your website or application",
   "main": "index.js",
   "scripts": {

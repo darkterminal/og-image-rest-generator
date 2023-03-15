@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://og-image-rest-generator.fly.dev/seo-banner?title=OG:IMAGE%20REST%20Generator%20-%20Free%20And%20Open%20Source!&author=darkterminal&head=Baby%20Tyrex%20Release&writer=Punk%20Storyteller" target="_blank"><strong>Try This!</strong></a>
+  <a href="https://og-image-rest-generator.fly.dev/seo-banner?title=OG:IMAGE%20REST%20Generator%20-%20Free%20And%20Open%20Source!&author=darkterminal&head=Young%20Tyrex%20Release&writer=Punk%20Storyteller" target="_blank"><strong>Try This!</strong></a>
 </p>
 
 ## Endpoint URL

@@ -73,7 +73,7 @@ Welcoming everyone that have passion and skill to make this app powerfull and fr
 
 OG:IMAGE REST Generator is an open-source project, and we welcome contributions from developers and enthusiasts of all levels of experience.
 
-[CONTRIBUTING.md]
+[CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Donation / Support
 If you find OG:IMAGE REST Generator to be a helpful tool for your website or application, please consider supporting the project. Your donation or sponsorship can help ensure that the project continues to thrive and improve over time. You can sponsor the project directly through Github Sponsor or donate through Paypal. Your support is greatly appreciated and will help to ensure that this powerful tool remains available for free to users all over the world. Thank you for your generosity and support!

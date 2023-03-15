@@ -5,8 +5,7 @@ const cors = require('cors');
 const compression = require("compression");
 
 const middlewares = require('./middlewares');
-const { generateMainImage } = require('./generator');
-const { classicSeoBanner, seoBanner } = require('./nodecanvas');
+const { seoBanner } = require('./nodecanvas');
 
 const app = express();
 
@@ -18,19 +17,25 @@ app.use(compression());
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'Crete Banner Image with Github Action & REST API - use /generator endpoint to generate your image get base64 from image png result',
+    message:
+      "Create OG:IMAGE Banner Image with Github Action & REST API - use /seo-banner endpoint to generate your image and get image/png result",
+    templates: {
+      detail: 'You can choose available template. (Default is: default)',
+      data: [
+        'default',
+        'facebook',
+        'facebook-minimal',
+        'twitter',
+        'twitter-minimal',
+        'instagram',
+        'instagram-minimal',
+        'linkedin',
+        'linkedin-minimal',
+        'pinterest',
+      ]
+    }
   });
 });
-
-app.post('/generator', async (req, res) => {
-    const { canonicalName, gradientColors, articleName, articleCategory, emoji } = req.body
-    const generated = await generateMainImage(canonicalName, gradientColors, articleName, articleCategory, emoji)
-    res.status(200).json({
-        message: "Image generated!",
-        image: `data:image/png;base64,${generated}`
-    })
-})
-app.get("/classic-seo-banner", classicSeoBanner);
 app.get('/seo-banner', seoBanner)
 
 app.use(middlewares.notFound);

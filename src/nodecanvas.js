@@ -1,7 +1,15 @@
 const ogDefault = require("./layouts/ogDefault");
 const ogFacebook = require("./layouts/ogFacebook");
 const ogFacebookMinimal = require("./layouts/ogFacebookMinimal");
+const ogInstagram = require("./layouts/ogInstagram");
+const ogInstagramMinimal = require("./layouts/ogInstagramMinimal");
+const ogLinkedin = require("./layouts/ogLinkedin");
+const ogLinkedinMinimal = require("./layouts/ogLinkedinMinimal");
+const ogPinterest = require("./layouts/ogPinterest");
+const ogTwitter = require("./layouts/ogTwitter");
+const ogTwitterMinimal = require("./layouts/ogTwitterMinimal");
 
+// @deprecated
 exports.classicSeoBanner = async (req, res) => {
   try {
     let { articleName, author, language = "javascript" } = req.query;
@@ -66,6 +74,27 @@ exports.seoBanner = async (req, res) => {
       break;
     case "facebook-minimal":
       canvas = await ogFacebookMinimal(title, author, logo, head, writer);
+      break;
+    case "twitter":
+      canvas = await ogTwitter(title, author, logo, head, writer);
+      break;
+    case "twitter-minimal":
+      canvas = await ogTwitterMinimal(title, author, logo, head, writer);
+      break;
+    case "instagram":
+      canvas = await ogInstagram(title, author, logo, head, writer);
+      break;
+    case "instagram-minimal":
+      canvas = await ogInstagramMinimal(title, author, logo, head, writer);
+      break;
+    case "linkedin":
+      canvas = await ogLinkedin(title, author, logo, head, writer);
+      break;
+    case "linkedin-minimal":
+      canvas = await ogLinkedinMinimal(title, author, logo, head, writer);
+      break;
+    case "pinterest":
+      canvas = await ogPinterest(title, author, logo, head, writer);
       break;
     default:
       canvas = await ogDefault(title, author, logo, head, writer);

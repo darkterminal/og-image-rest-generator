@@ -11,7 +11,13 @@ const app = express();
 
 app.use(morgan('dev'));
 app.use(helmet());
-app.use(cors());
+app.use(cors({
+  exposedHeaders: ['Cross-Origin-Resource-Policy']
+}));
+app.use((req, res, next) => {
+  res.set('Cross-Origin-Resource-Policy', 'same-site');
+  next();
+})
 app.use(express.json());
 app.use(compression());
 
